@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JokeBook</title>
+</head>
+<body>
+    <h1>JokeBook</h1>
+    <div th:each="joke : ${jokes}">
+        <p th:text="${joke.text}"></p>
+        <small th:text="${joke.rating}"></small>
+    </div>
+</body>
+</html>
